@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <title>1.1 Paleta de color chidota</title>
+    <h1 class="text-center mt-5">1.1 Super paleta de colores chidota</h1>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <label for="redInput">Rojo:</label>
+            <input type="range" class="form-control-range" id="redInput" min="0" max="255" value="25">
+            <input type="number" class="form-control mt-2" id="redManualInput" min="0" max="255" value="25">
+        </div>
+        <div class="col-md-4">
+            <label for="greenInput">Verde:</label>
+            <input type="range" class="form-control-range" id="greenInput" min="0" max="255" value="224">
+            <input type="number" class="form-control mt-2" id="greenManualInput" min="0" max="255" value="224">
+        </div>
+        <div class="col-md-4">
+            <label for="blueInput">Azul:</label>
+            <input type="range" class="form-control-range" id="blueInput" min="0" max="255" value="201">
+            <input type="number" class="form-control mt-2" id="blueManualInput" min="0" max="255" value="201">
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <label for="rgbDisplay">Tonalidad RGB:</label>
+            <div id="rgbDisplay" class="color-display"></div>
+        </div>
+        <div class="col-md-7">
+            <label for="hexDisplay">Código Hexadecimal:</label>
+            <div id="hexDisplay" class="color-display"></div>
+            <!-- Nuevo cuadro para mostrar el resultado en caracteres hexadecimales -->
+            <div id="hexResult" class="color-display"></div>
+        </div>
+    </div>
+    <!-- Nuevo input para el color picker -->
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <label for="colorPicker">Selector de color:</label>
+            <input type="color" class="form-control" id="colorPicker">
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
